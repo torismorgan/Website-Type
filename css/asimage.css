@@ -1,0 +1,117 @@
+html, body {
+  min-height: 100vh;
+  background-color: #6B754C; 
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+.logo-letter {
+  color: #F3F0E9; 
+}
+
+.image-section {
+  min-height: calc(100vh - 160px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-card {
+  position: relative;
+  width: 1039px;
+  height: 622px;
+  background-color: #7C8A4E;
+  opacity: 0.77;
+  border-radius: 45px;
+  filter: drop-shadow(0 4px 40px rgba(0, 0, 0, 0.25));
+  overflow: hidden;
+}
+
+.image-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABhklEQVR4Xu3bQQrCMBQF0P7/P2Q2bZ3WYpFHKBogTUN324jGmbUFM1+N8fZtKMKDG8jx2P//PwMAAAAAAAAAAAAAAAB4J7BwSs5EvkEwmEcQ8vZ4Uc4AOAHzGdJ+RRqugl0fx0PO87lUmwCMwoRj0GiEJ4zMqVhWDGpP95MB2MZ8tR1SEmVHZm0iFBGqixHNdNhqggSMEwKCZUbQpkICj5SDBMMvciuy0AEg9GoYqLUAUR6EoVxrRBdDqGQ2QeVBhgUpZJSCVFQGgFIpGoZ4XwzClAA0wPKQFLoQKOA0ukhmgS8BtR8bgyCuQIvA40HxtES7AE9DbYF8kwwaNfBi1gN3DcRoOXAqZB45cDKkGDlwMqQYOWAypBg5YDKkGDlwMqQYOWAy5rD4/wPlQ2ZPNhQaycAAAAASUVORK5CYII=");
+  
+  opacity: .85; /* looks like Figma 25–30% */
+  mix-blend-mode: multiply;
+
+  /* absolutely no repeating grid */
+  background-size: 200px 200px;
+}
+
+.image-word {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px; 
+}
+
+.image-char {
+  font-family: "NauryzRedkeds", sans-serif;
+  font-weight: 700;
+  color: #F3F0E9;
+}
+
+.image-char--b { font-size: 230px; }
+.image-char--o { font-size: 180px; }
+.image-char--j {
+     font-size: 250px;
+     transform: translateX(-22px) translateY(40px);
+    
+     
+ }
+.image-char--a { font-size: 180px; }
+
+
+.image-letter {
+  position: absolute;
+  font-family: "NauryzRedkeds", sans-serif;
+  font-size: 180px;
+  font-weight: 700;
+  color: #F9F7F3;
+}
+
+.image-letter--br { 
+    top: -72px; 
+    left: -52px; 
+    width: 201.964px;
+    transform: rotate(-84.981deg);
+ }
+
+.image-letter--tl {
+    top: -90px;
+    right: -40px; 
+    transform: rotate(136.577deg); 
+}
+
+.image-letter--bl { 
+    bottom: -90px; 
+    left: -40px; 
+    transform: rotate(-42.112deg);
+}
+
+.image-letter--tr { 
+    bottom: -72px; 
+    right: -52px; 
+    transform: rotate(96deg); 
+    width: 201.964px;
+    transform: rotate(96.521deg);
+}
+
+.image-star {
+  position: absolute;
+  top: 45%;
+  left: 66%;
+  transform: translate(-50%, -60%);
+  font-family: "NauryzRedkeds", sans-serif;
+  color: #1A3A2A;
+  font-size: 250px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
