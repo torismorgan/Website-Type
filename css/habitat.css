@@ -109,8 +109,8 @@ body {
 
 .page-title {
     position: absolute;
-    left: -35px;
-    bottom: -120px;
+    left: 65px;
+    bottom: 120px;
     margin: 0;
     font-family: "NauryzRedkeds", sans-serif;
     color: var(--cream);
