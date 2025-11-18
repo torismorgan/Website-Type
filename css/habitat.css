@@ -133,7 +133,7 @@ body {
     }
 
     .card {
-        width: min(24vw, 120px);
+        width: min(48vw, 240px);
     }
 
     .page-title {
