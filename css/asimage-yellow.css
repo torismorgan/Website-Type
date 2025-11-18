@@ -1,0 +1,141 @@
+html,
+body {
+  min-height: 100vh;
+  margin: 0;
+  background-color: #E4B32C;    
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+
+.logo-letter {
+  color: #F3F0E9;
+}
+
+
+.image-section {
+  min-height: calc(100vh - 160px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.image-card {
+  position: relative;
+  width: 1039px;
+  height: 622px;
+  background-color: #E4B32C;     
+  border-radius: 45px;
+  filter: drop-shadow(0 4px 40px rgba(0, 0, 0, 0.25));
+  overflow: hidden;
+}
+
+
+.image-word {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.image-letter {
+  font-family: "NauryzRedkeds", sans-serif;
+  font-weight: 700;
+  color: #FDF8E7;      
+  line-height: 0.8;
+}
+
+
+.image-letter--H {
+  font-size: 270px;
+  transform: translateY(30px);
+}
+
+.image-letter--O {
+  font-size: 150px;
+}
+
+.image-letter--O1 {
+  color: #111111;
+   transform: translateY(-90px);
+  
+}
+
+
+.image-letter--O2 {
+  transform: translateY(-90px);
+}
+
+.image-letter--R {
+  font-size: 250px;
+  transform: translateY(15px);
+}
+
+.image-letter--I {
+  position: absolute;
+  font-size: 140px;     
+   top: 120px;
+  left: 675px;
+  color:#111111;
+}
+
+.image-letter--Z {
+  font-size: 230px;
+  transform: translateY(45px);
+  color: #111111;
+}
+
+.image-letter--N {
+  font-size: 210px;
+  color: #111111;      
+}
+.corner {
+  position: absolute;
+  font-family: "NauryzRedkeds", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  pointer-events: none;
+}
+
+.corner span {
+  display: inline-block;
+  margin-right: 4px;
+}
+
+/* COLORS */
+.dot-black { color: #000; }
+.dot-white { color: #FDF8E7; }
+
+
+/* top-left */
+.corner--tl {
+  top: 55px;
+  left: -30px;
+  transform: rotate(135deg);
+}
+
+/* top-right */
+.corner--tr {
+top: 55px;
+  right: -30px;
+  transform: rotate(45deg);
+}
+
+/* bottom-left */
+.corner--bl {
+  bottom: 40px;
+  left: -60px;
+  transform: rotate(-135deg);
+}
+
+/* bottom-right */
+.corner--br {
+  bottom: 40px;
+  right: -30px;
+  transform: rotate(-45deg);
+}
+
+
+

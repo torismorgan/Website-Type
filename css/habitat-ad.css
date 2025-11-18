@@ -1,0 +1,90 @@
+
+:root {
+  --red: #B34135;
+  --cream: #F3F0E9;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: var(--red);
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+.logo-letter {
+  color: #F3F0E9;
+}
+
+
+#page.ad-main {
+     height: calc(100vh - 130px);  
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+
+.ad-frame {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.ad-image{
+    position: relative;
+    max-width: 520px;
+    top:-38px;
+    width: 100%;
+    height: auto;
+  border-radius: 26px;
+  box-shadow: 0 20px 40px rgba(77, 30, 30, 0.4);
+}
+
+
+.board {
+    position: absolute;
+    top: 190px;
+    left: 260px;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.board-main {
+    font-family: "NauryzRedkeds", sans-serif;
+    font-size: 30px;
+    letter-spacing: 0.08em;
+    color: #FFD94A;
+    display: block;
+}
+
+.board .board-sub {
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: #FFD94A;
+    margin-top: 4px;
+
+
+}
+
+
+.page-title {
+  position: absolute;
+    left: 50%;
+    bottom: -340px;
+  transform: translateX(-50%);
+  margin: 0;
+  color: var(--cream);
+  font-family: "NauryzRedkeds";
+  font-size: 300px;
+  font-weight: 700;
+  white-space: nowrap;
+  line-height: 1;
+}

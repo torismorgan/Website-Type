@@ -1,0 +1,121 @@
+
+:root {
+  --red: #7C8A4E;
+  --cream: #F3F0E9;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: var(--red);
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+.logo-letter {
+  color: #F3F0E9;
+}
+
+
+#page.pk-main {
+     height: calc(100vh - 130px);  
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+
+.pk-frame {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* BILLBOARD IMAGE SIZE */
+.pk-image{
+    position: relative;
+    max-width: 520px;
+    top:-38px;
+    width: 100%;
+    height: auto;
+  border-radius: 26px;
+  box-shadow: 0 20px 40px rgba(77, 30, 30, 0.4);
+}
+
+.package {
+    position: absolute;
+    top: 37%;                 /* move whole text block up/down */
+    left: 51%;                /* move left/right */
+    transform: translate(-50%, -50%) rotate(20deg);
+    width: 230px;
+    text-align: center;
+}
+
+/* KOYTO + star container */
+.pk-logo-wrap {
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 2px;
+}
+
+/* base style for each letter */
+.pk-logo-char {
+    display: inline-block;
+    font-family: "NauryzRedkeds", sans-serif;
+    font-size: 90px;
+    color: #DAE8AD;
+}
+
+/* fake a gentle curve using per-letter offsets */
+.pk-logo-char:nth-child(1) { transform: translateY(6px) rotate(-8deg); }
+.pk-logo-char:nth-child(2) { transform: translateY(2px) rotate(-4deg); }
+.pk-logo-char:nth-child(3) { transform: translateY(0px); }
+.pk-logo-char:nth-child(4) { transform: translateY(2px) rotate(4deg); }
+.pk-logo-char:nth-child(5) { transform: translateY(6px) rotate(8deg); }
+
+/* star */
+.pk-star {
+    position: relative;
+    display: inline-block;
+    font-family: "NauryzRedkeds", sans-serif;
+    font-size: 140px;
+    color: #DAE8AD;
+    margin-left: 6px;
+    left: -60px;
+    bottom:-130px;
+}
+
+
+.pk-sub {
+    position: relative;
+    left: 7px;
+    margin: 82px auto 0;
+    max-width: 180px;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.08em;
+    color: #7C8A4E;
+    text-align: center;
+}
+
+
+
+.page-title {
+  position: absolute;
+    left: 50%;
+    bottom: -315px;
+  transform: translateX(-50%);
+  margin: 0;
+  color: var(--cream);
+  font-family: "NauryzRedkeds";
+  font-size: 315px;
+  font-weight: 700;
+  white-space: nowrap;
+  line-height: 1;
+}
