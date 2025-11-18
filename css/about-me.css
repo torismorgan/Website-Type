@@ -1,0 +1,141 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #F3F0E9;
+  font-family: system-ui, sans-serif;
+
+}
+
+.project-main {
+  max-width: 1207px;
+  margin: 120px auto 80px;
+  padding: 0 48px;
+}
+
+
+
+.project-hero {
+  display: flex;
+  flex-direction: column;   /* stack name + star */
+  align-items: center;      /* PERFECT CENTER */
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 96px;
+  position: relative;
+}
+
+.project-name {
+  flex: 1;                   /* NEW – lets it stretch and center */
+  text-align: center;
+  max-width: 100%;
+ 
+}
+
+.project-name-wrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+/* vertical “Project by” */
+.project-label {
+    position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #F3F0E9;            
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(360deg); /* reads bottom → top like the Figma */
+  margin-top: 0px;
+
+  right:-290px;
+
+}
+
+
+.project-line {
+  display: block;
+  font-family: "NauryzRedkeds", sans-serif;
+  font-size: clamp(120px, 18vw, 300px);
+  line-height: 0.9;
+  color: #F4C542;
+  text-align: center
+}
+
+.project-star {
+  position:absolute;
+  right: -250px;
+  bottom: 265px;
+  font-family: "NauryzRedkeds", sans-serif;
+  font-size: 340px;
+  color: #6B754C;
+}
+
+.project-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 80px;    
+  margin: 10px;
+  max-width: 100%;
+}
+
+.project-copy {
+    position: relative;
+    right:150px;
+    top: -60px;
+  max-width: 830px;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  font-size: 20px;
+  color: #6B754C;
+  letter-spacing: 0.011em;
+  
+}
+
+
+.project-heading {
+    position: relative;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #6B754C;
+  margin-bottom: px;
+}
+
+/* right references column */
+.project-refs {
+    position: relative;
+  font-family: "Poppins", sans-serif;
+  top: 60px;
+  line-height: 1.5;
+  text-align: right;
+  color: #6B754C;
+  font-style: italic;
+  flex: 0 0 320px;
+  width: 320px;
+}
+
+.project-refs-heading {
+  font-weight: 500;
+  margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.project-refs-list {
+      font-size: 18px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-refs-list li + li {
+  margin-top: 4px;
+}
+
+.project-refs a {
+  color: #6B754C;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

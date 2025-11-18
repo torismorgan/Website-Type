@@ -21,7 +21,8 @@ html, body {
 .about-line {
   display: block;
   font-family: "NauryzRedkeds", sans-serif;
-  font-size: clamp(80px, 15vw, 250px);   /* CHANGED */
+  font-size: clamp(96px, 14vw, 250px);
+
   line-height: 0.9;
   color: #B34135;
 }
