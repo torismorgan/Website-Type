@@ -109,7 +109,7 @@ body {
 
 .page-title {
     position: absolute;
-    left: 65px;
+    left: -65px;
     bottom: 320px;
     margin: 0;
     font-family: "NauryzRedkeds", sans-serif;
