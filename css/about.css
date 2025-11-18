@@ -1,169 +1,113 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 html, body {
-  min-height: 100vh;
+  height: 100%;
+  margin: 0;
   background-color: #F3F0E9;
   font-family: system-ui, sans-serif;
 }
-
-
-@font-face {
-    font-family: "NauryzRedkeds";
-    src: url("../fonts/NAURYZREDKEDS.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
+.about-main {
+  max-width: 1207px;         
+  margin: 160px auto 120px; 
+  padding: 0;         
 }
 
-
-
-.site-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;   
-  gap: 48px;
-  padding-top: 32px;
-}
-
-
-.logo {
-  display: flex;
-  gap: 4px;              
-  text-decoration: none;
-  justify-content: center;
-}
-
-.logo-letter {
-  font-family: "NauryzRedkeds", sans-serif;
-  font-size: 24px;      
-  color: #222222;
-  line-height: 1;
-   letter-spacing: -0.3em; 
-
-    animation: titleColorCycle 12s infinite cubic-bezier(0.4, 0.0, 0.2, 1);
-}
-
-
-
-.nav-pill {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 40px;             
-  padding: 0px;
-  height: 56px;
-  background-color: #333333; 
-  border-radius: 999px;
-  margin-top: 24px;
-}
-
-
-.nav-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  padding: 0 32px;
-  border-radius: 999px;
-  text-decoration: none;
-  color: #ffffff;
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  transition: background-color 0.25s ease, color 0.25s ease;
-}
-
-.nav-pill li {
-  height: 100%;
-  display: flex;
-  align-items: stretch;
-}
-
-.nav-link--image:hover,
-.nav-link--image.is-active {
-  background-color: #7C3C33;
-}
-
-.nav-link--habitat:hover,
-.nav-link--habitat.is-active {
-  background-color: #4E5740;
-}
-
-.nav-link--fave:hover,
-.nav-link--fave.is-active {
-  background-color: #7B6A32;
-}
-
-.nav-link--about:hover,
-.nav-link--about.is-active {
-  background-color: #353A4F;
-}
-
-
-.primary-nav {
-  list-style: none;
-  display: flex;
-  gap: 24px;
-}
-
-.primary-nav a {
-  text-decoration: none;
-  color: black;
-}
-
-.wrapper {
-  min-height: calc(100vh - 100px); 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content:center;
-  background-color: #F3F0E9;
-  text-align: center;
-}
-.hero-block {
-  width: 1207px;   
-  margin: 0 auto;       
-  display: flex;
+.about-hero {
+  position: relative;
+  margin-bottom: 146px;
+ display: flex;
   flex-direction: column;
   align-items: center; 
 }
 
-.hero-title {
+.about-line {
+  display: block;
   font-family: "NauryzRedkeds", sans-serif;
-  text-align: center;
-  font-size: 250px;
+  font-size: clamp(80px, 15vw, 250px);   /* CHANGED */
   line-height: 0.9;
-  color: #F4C542;
-  text-transform: uppercase;
-
-  animation: titleColorCycle 12s infinite;
-  animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
-
+  color: #B34135;
 }
 
 
-.caption {
-  font-family: "Inter", sans-serif;
-  font-size: 24px;
+.about-name {
+  text-align: center;
+}
+
+
+.about-star {
+  position: absolute;
+  left: -280px;               
+  bottom: -40px;
+  font-family: "NauryzRedkeds", sans-serif;
+  font-size: 340px;
+  color: #37446F;
+}
+
+
+.about-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 100px;
+}
+
+.about-info {
+  max-width: 520px;
+   margin-left: -140px;
+}
+
+/* glyph circles */
+
+.glyph-wrap {
+ margin-left: auto;
+}
+
+/* 8 per row, bigger circles */
+.glyph-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 44px);  /* 8 per row */
+  gap: 18px;
+  justify-content: flex-end;
+}
+
+/* replace the empty .about-label block with these two */
+
+.about-copy {
+  font-family: "Poppins", system-ui, sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #37446F;
+  margin: 0 0 14px;
+  font-weight: 300;
   font-style: italic;
-  line-height: 100%;
-  color: #000000;
-  width: 352px;         
-  text-align: right;   
-  margin-top: 12px;  
-  align-self: flex-end; 
+   margin-left: -70px;
+  
+}
+
+.about-copy-title {
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+ 
+}
+
+.about-copy a {
+  color: #37446F;
+  text-decoration: underline;
+  font-weight: 500;
 }
 
 
-@keyframes titleColorCycle {
-  0%   { color: #F4C542; }
-  25%  { color: #3A4A7A; }
-  50%  { color: #B34135; }
-  75%  { color: #6B754C; }
-  100% { color: #F4C542; }
+.glyph {
+  width: 54px;
+  height: 58px;
+  border-radius: 50%;
+  border: 2px solid #B34135;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  justify-content: center;
+  font-family: "NauryzRedkeds", sans-serif;
+  font-size: 22px;           /* bigger glyphs */
+  color: #37446F;
+  text-transform: uppercase;
 }
