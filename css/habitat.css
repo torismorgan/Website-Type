@@ -121,11 +121,11 @@ body {
     white-space: nowrap;
 }
 
-@media (max-width: 800px) {
+/*@media (max-width: 800px) {
     .habitat-frame {
         padding-top: 110px;
 
-        /* CHANGE 5: adjusted padding for mobile stacking */
+        /* CHANGE 5: adjusted padding for mobile stacking 
         padding-bottom: 100px;
     }
 
@@ -144,4 +144,4 @@ body {
         margin-top: 40px;
         font-size: 206px;
     }
-}
+} */
