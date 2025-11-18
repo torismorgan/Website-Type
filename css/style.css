@@ -173,7 +173,7 @@ html, body {
 /* optional: little pill at bottom as a hint */
 .scroll-hint {
   position: fixed;
-  bottom: 24px;
+  bottom: 204px;
   left: 50%;
   transform: translateX(-50%);
   padding: 6px 16px;
@@ -182,34 +182,9 @@ html, body {
   color: #fff;
   font-size: 14px;
   z-index: 999;
-  opacity: 0.8;
+  opacity: 0.4;
 }
 
-.page-nav {
-  margin: 32px 48px;
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-}
-.page-nav.center {
-    justify-content: center;
-    margin-top: 24px;
-}
-
-
-.page-nav a {
-  display: inline-block;
-  background: #2f3225;
-  color: #fff;
-  padding: 8px 18px;
-  border-radius: 999px;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.page-nav a:hover {
-  opacity: 0.85;
-}
 
 
 @keyframes titleColorCycle {

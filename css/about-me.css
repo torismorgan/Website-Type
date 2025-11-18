@@ -57,7 +57,7 @@ html, body {
 .project-line {
   display: block;
   font-family: "NauryzRedkeds", sans-serif;
-  font-size: clamp(120px, 18vw, 300px);
+  font-size: clamp(120px, 18vw, 200px);
   line-height: 0.9;
   color: #F4C542;
   text-align: center
