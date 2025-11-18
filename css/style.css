@@ -161,6 +161,56 @@ html, body {
   align-self: flex-end; 
 }
 
+.section-screen {
+  min-height: 100vh;            /* full viewport height */
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;          /* center your content, optional */
+  justify-content: center;
+  padding: 80px 48px 48px;      /* top padding so header doesn’t cover content */
+}
+
+/* optional: little pill at bottom as a hint */
+.scroll-hint {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: #2f3225;
+  color: #fff;
+  font-size: 14px;
+  z-index: 999;
+  opacity: 0.8;
+}
+
+.page-nav {
+  margin: 32px 48px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.page-nav.center {
+    justify-content: center;
+    margin-top: 24px;
+}
+
+
+.page-nav a {
+  display: inline-block;
+  background: #2f3225;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.page-nav a:hover {
+  opacity: 0.85;
+}
+
 
 @keyframes titleColorCycle {
   0%   { color: #F4C542; }
