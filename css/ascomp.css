@@ -1,0 +1,136 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: #F3F0E9;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.comp-frame {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+.comp-box {
+  position: relative;
+  width: 661px;
+  height: 627px;
+  border-radius: 20px;
+  animation: boxColors 16s infinite linear; /* 4 states × 6s */
+}
+
+
+.comp-r {
+  position: absolute;
+  width: 346px;
+  height: 521px;
+  font-family: "NauryzRedkeds", sans-serif;
+  font-weight: 700;
+  font-size: 600px;
+  line-height: 1;
+}
+
+
+.pose {
+  opacity: 0;
+  animation-duration: 16s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.pose1-a,
+.pose1-b {
+  animation-name: show1;      
+  color: #F4C542;
+  top: 53px;
+  
+}
+
+
+.pose1-a {
+  transform: rotate(0deg);
+  left: 222px;
+}
+.pose1-b {
+  transform: scaleX(-1);
+  left: 92px;
+}
+
+/* -------- STATE 2 – coral, Rs spaced horizontally -------- */
+
+.pose2-a,
+.pose2-b {
+  animation-name: show2;       /* second quarter */
+  color: #B34135;
+  top: 53px;
+}
+
+/* left R */
+.pose2-a {
+  left: 76px;
+  transform: scaleY(-1);
+
+}
+
+/* right R */
+.pose2-b {
+  left: 232px;
+  transform: rotate(180deg);
+}
+
+/* -------- STATE 3 – olive, two flipped Rs in same frame -------- */
+
+.pose3-a,
+.pose3-b {
+  animation-name: show3;       /* third quarter */
+  color: #6B754C;
+  top: 53px;
+  
+}
+
+/* one upright, one upside-down */
+.pose3-a {
+    left:173px;
+  transform: rotate(0deg);
+}
+.pose3-b {
+     left:123px;
+  transform: scaleX(-1);
+
+}
+@keyframes boxColors {
+  0%, 33% {
+    background-color: #FFD84D66;   /* yellow */
+  }
+  34%, 66% {
+    background-color: #F4B0A966;   /* coral */
+  }
+  67%, 100% {
+    background-color: #B8C29866;   /* olive */
+  }
+}
+
+@keyframes show1 {
+  0%, 33%   { opacity: 1; }
+  34%, 100% { opacity: 0; }
+}
+
+@keyframes show2 {
+  0%, 33%   { opacity: 0; }
+  34%, 66%  { opacity: 1; }
+  67%, 100% { opacity: 0; }
+}
+
+@keyframes show3 {
+  0%, 66%   { opacity: 0; }
+  67%, 100% { opacity: 1; }
+}

@@ -48,21 +48,21 @@ html, body {
 
 .package {
     position: absolute;
-    top: 37%;                 /* move whole text block up/down */
-    left: 51%;                /* move left/right */
+    top: 39%;                 
+    left: 51%;                
     transform: translate(-50%, -50%) rotate(20deg);
     width: 230px;
     text-align: center;
 }
 
-/* KOYTO + star container */
+
 .pk-logo-wrap {
     display: inline-flex;
     align-items: flex-end;
     gap: 2px;
 }
 
-/* base style for each letter */
+
 .pk-logo-char {
     display: inline-block;
     font-family: "NauryzRedkeds", sans-serif;
@@ -70,12 +70,12 @@ html, body {
     color: #DAE8AD;
 }
 
-/* fake a gentle curve using per-letter offsets */
-.pk-logo-char:nth-child(1) { transform: translateY(6px) rotate(-8deg); }
-.pk-logo-char:nth-child(2) { transform: translateY(2px) rotate(-4deg); }
-.pk-logo-char:nth-child(3) { transform: translateY(0px); }
-.pk-logo-char:nth-child(4) { transform: translateY(2px) rotate(4deg); }
-.pk-logo-char:nth-child(5) { transform: translateY(6px) rotate(8deg); }
+
+.pk-logo-char:nth-child(1) { transform: translateY(-8px) rotate(-4deg); }
+.pk-logo-char:nth-child(2) { transform: translateY(-6px) rotate(2deg); }
+.pk-logo-char:nth-child(3) { transform: translateY(-5px) rotate(3deg);}
+.pk-logo-char:nth-child(4) { transform: translateY(-5px) rotate(4deg); }
+.pk-logo-char:nth-child(5) { transform: translateY(-8px) rotate(-3deg); }
 
 /* star */
 .pk-star {
@@ -91,13 +91,12 @@ html, body {
 
 
 .pk-sub {
-    position: relative;
-    left: 7px;
-    margin: 82px auto 0;
+
+    margin: 68px auto 0;
     max-width: 180px;
     font-family: "Poppins", sans-serif;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.08em;
     color: #7C8A4E;
