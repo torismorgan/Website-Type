@@ -19,7 +19,7 @@ body {
 
 #page.habitat-main {
     height: calc(100vh - 130px);  /* 🔧 tweak 88px to match your header height */
-    overflow: hidden;
+    overflow:visible;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,13 +109,12 @@ body {
 
 .page-title {
     position: absolute;
-    left: 50%;
-    bottom: -250px;
-    transform: translateX(-50%);
+    left: -35px;
+    bottom: -120px;
     margin: 0;
     font-family: "NauryzRedkeds", sans-serif;
     color: var(--cream);
-    font-size: 290px;
+    font-size: 207px;
     font-style: normal;
     font-weight: 700;
     line-height: 1;
