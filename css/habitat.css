@@ -48,7 +48,7 @@ body {
 
 .card {
     position: relative;
-    width: min(44vw, 380px); 
+    width: min(44vw, 180px); 
     aspect-ratio: 290 / 363;
     border-radius: 20px;
     overflow: hidden;
