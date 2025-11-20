@@ -40,7 +40,7 @@ body {
 /* Card row */
 .cards-row {
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
   width: 100%;
   overflow-x: auto;
   padding: 10px 6px 30px;
@@ -58,7 +58,7 @@ body {
 /* Cards (Instagram-style tiles) */
 .card {
   position: relative;
-  flex: 0 0 320px;       /* fixed width -> matches reference */
+  flex: 0 0 280px;       /* fixed width -> matches reference */
   aspect-ratio: 1 / 1.15;
   border-radius: 20px;
   overflow: hidden;
