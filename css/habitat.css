@@ -122,7 +122,17 @@ body {
   text-transform: uppercase;
 }
 
-/* Big “SOCIAL MEDIA” title */
 .page-title {
-  margin: 0;
-  font-family: "NauryzRedkeds"
+    position: absolute;
+    bottom: -80px;   /* pushes it downward so it overlaps/cuts out */
+    left: 50%;
+    transform: translateX(-50%); /* perfectly centers it */
+
+    font-family: "NauryzRedkeds", sans-serif;
+    color: #F3F0E9;   /* cream */
+    font-size: 210px; /* bigger – adjust if needed */
+    font-weight: 700;
+    line-height: 1;
+    white-space: nowrap;
+    pointer-events: none;
+}
