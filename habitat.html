@@ -1,69 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>In Habitat</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/habitat.css">
+  <meta charset="UTF-8">
+  <title>In Habitat</title>
+
+  <!-- Global styles (your existing file) -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Page-specific styles -->
+  <link rel="stylesheet" href="css/habitat.css">
 </head>
 
 <body data-nextpage="habitat-ad.html" data-prevpage="">
+  <header class="site-header">
+    <div class="header-row">
+      <a href="index.html" class="logo">
+        <span class="logo-letter">AB</span>
+      </a>
 
-    <header class="site-header">
-        <div class="header-row">
-            <a href="index.html" class="logo">
-             <span class="logo-letter">AB</span>
-            </a>
-        <nav aria-label="Primary navigation">
-            <ul class="nav-pill">
-            <li><a href="asimage.html"  class="nav-link nav-link--image">AS IMAGE</a></li>
-            <li><a href="habitat.html"  class="nav-link nav-link--habitat">AS HABITAT</a></li>
-            <li><a href="fav.html"      class="nav-link nav-link--fave">FAVE CHARACTER</a></li>
-            <li><a href="about.html"    class="nav-link nav-link--about">ABOUT</a></li>
-            </ul>
-        </nav>
-        </div>
-    </header>
-<main>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-pill">
+          <li><a href="asimage.html"  class="nav-link nav-link--image">AS IMAGE</a></li>
+          <li><a href="habitat.html"  class="nav-link nav-link--habitat is-active">AS HABITAT</a></li>
+          <li><a href="fav.html"      class="nav-link nav-link--fave">FAVE CHARACTER</a></li>
+          <li><a href="about.html"    class="nav-link nav-link--about">ABOUT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-             <section id="page" class="habitat-main">
-        <div class="habitat-frame">
-            <div class="cards-row">
-            <div class="card">
-                <img src="images/lemon.png" alt="Card 1 image">
-                <div class="card-label1">BLOOM</div>
-            </div>
+  <main>
+    <section id="page" class="habitat-main">
+      <div class="habitat-frame">
 
-       
-            <div class="card">
-                <img src="images/type.png" alt="Card 2 image">
-                <div class="card-label2">
-                Breathe softly.<br>
-                Bloom loudly.
-            </div>
-        </div>
+        <!-- Card row -->
+        <div class="cards-row" aria-label="Bloom social media posts">
+          <article class="card">
+            <img src="images/lemon.png" alt="Lemon picnic scene">
+            <span class="card-label card-label--lemon">BLOOM</span>
+          </article>
 
-        
-            <div class="card">
-                <img src="images/woman.png" alt="Card 3 image">
-                <div class="card-label3">
-                    BLOOM
-            </div>
-        </div>
+          <article class="card">
+            <img src="images/type.png" alt="Breathe softly, bloom loudly type">
+            <span class="card-label card-label--type">
+              Breathe softly.<br>Bloom loudly.
+            </span>
+          </article>
 
-            <div class="card">
-                <img src="images/flower.png" alt="Card 4 image">
-                <div class="card-label4">BLOOM</div>
-            </div>
-            </div>
-        <p class="scroll-hint">
-  Scroll 
-</p>
-            <h1 class="page-title">Social Media</h1>
+          <article class="card">
+            <img src="images/woman.png" alt="Woman lounging on red sofa">
+            <span class="card-label card-label--woman">BLOOM</span>
+          </article>
+
+          <article class="card">
+            <img src="images/flower.png" alt="Pink flowers close up">
+            <span class="card-label card-label--flower">BLOOM</span>
+          </article>
         </div>
 
+        <p class="scroll-hint">Scroll</p>
+
+        <h1 class="page-title">SOCIAL MEDIA</h1>
+
+      </div>
     </section>
-</main>
-   <script src="scroll-nav.js"></script>
+  </main>
+
+  <script src="scroll-nav.js"></script>
 </body>
 </html>
