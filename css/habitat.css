@@ -40,9 +40,10 @@ body {
 /* Card row */
 .cards-row {
   display: flex;
+  justify-content: center; 
+   overflow-x: visible;   
   gap: 2rem;
   width: 100%;
-  overflow-x: auto;
   padding: 10px 6px 30px;
   scroll-behavior: smooth;
 }
