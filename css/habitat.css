@@ -125,8 +125,8 @@ body {
 
 .page-title {
     position: absolute;
-   bottom: -140px;   /* pushes it downward so it overlaps/cuts out */
-    left: -135px;
+    bottom: -80px;   /* pushes it downward so it overlaps/cuts out */
+    left: 50%;
     transform: translateX(-50%); /* perfectly centers it */
     font-family: "NauryzRedkeds", sans-serif;
     color: #F3F0E9;   /* cream */
