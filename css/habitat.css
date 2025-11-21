@@ -124,10 +124,9 @@ body {
 
 .page-title {
     position: absolute;
-    bottom: -180px;   /* pushes it downward so it overlaps/cuts out */
+    bottom: -160px;   /* pushes it downward so it overlaps/cuts out */
     left: 50%;
     transform: translateX(-50%); /* perfectly centers it */
-
     font-family: "NauryzRedkeds", sans-serif;
     color: #F3F0E9;   /* cream */
     font-size: 180px; /* bigger – adjust if needed */
