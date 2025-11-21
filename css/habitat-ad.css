@@ -48,7 +48,7 @@ html, body {
     Matching your Figma: width = 499px, radius = 20px
 ---------------------------------------------------- */
 .ad-image {
-  width: in(32vw, 420px);;
+  width: min(32vw, 420px);;
   height: auto;
   border-radius: 20px;
   box-shadow: 0 20px 40px rgba(77, 30, 30, 0.4);
