@@ -99,7 +99,7 @@ body {
 .card-label--woman {
  top: 44%;
   left: 19%;
-  font-size: 38px;
+  font-size: 34px;
   color: #FF5757;
    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -107,7 +107,7 @@ body {
 .card-label--flower {
   top: 44%;
   left: 22%;
-  font-size: 36px;
+  font-size: 32px;
   color: #95B671;
    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -125,7 +125,7 @@ body {
 
 .page-title {
     position: absolute;
-    bottom: -210px;   /* pushes it downward so it overlaps/cuts out */
+    bottom: -200px;   /* pushes it downward so it overlaps/cuts out */
     left: 50%;
     transform: translateX(-50%); /* perfectly centers it */
     font-family: "NauryzRedkeds", sans-serif;
