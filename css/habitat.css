@@ -82,7 +82,7 @@ body {
 
 /* Per-card tweaks to match designs */
 .card-label--lemon {
-  top:50%;
+  top:46%;
   left: 22%;
   font-size: 26px;
   color: #FAD84A;
@@ -91,7 +91,7 @@ body {
 
 .card-label--type {
   top: 18%;
-  left: 5%;
+  left: 3%;
   font-size: 30px;
   color: #FFF2F2;
 }
