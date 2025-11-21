@@ -138,7 +138,7 @@ html, body {
 .hero-title {
   font-family: "NauryzRedkeds", sans-serif;
   text-align: center;
-  font-size: clamp(80px, 15vw, 250px);
+  font-size: clamp(80px, 15vw, 170px);
   line-height: 0.9;
   color: #F4C542;
   text-transform: uppercase;
