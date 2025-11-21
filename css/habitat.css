@@ -97,15 +97,15 @@ body {
 }
 
 .card-label--woman {
-  bottom: 48%;
-  left: 36%;
+ top: 48%;
+  left: 25%;
   font-size: 38px;
   color: #FF5757;
    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .card-label--flower {
-  bottom: 50%;
+  top: 50%;
   left: 22%;
   font-size: 36px;
   color: #95B671;
