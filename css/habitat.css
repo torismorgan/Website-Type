@@ -83,28 +83,28 @@ body {
 
 /* Per-card tweaks to match designs */
 .card-label--lemon {
-  top: 16%;
+  top:46%;
   left: 16%;
   font-size: 34px;
   color: #FAD84A;
 }
 
 .card-label--type {
-  top: 18%;
+  top: 48%;
   left: 8%;
   font-size: 26px;
   color: #FFF2F2;
 }
 
 .card-label--woman {
-  bottom: 18%;
+  bottom: 48%;
   left: 26%;
   font-size: 38px;
   color: #FF5757;
 }
 
 .card-label--flower {
-  bottom: 16%;
+  bottom: 46%;
   left: 20%;
   font-size: 38px;
   color: #95B671;
