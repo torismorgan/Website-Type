@@ -114,7 +114,7 @@ body {
   margin: 48px 0 0;
   color: var(--cream);
   font-family: "NauryzRedkeds", sans-serif;
-  font-size: clamp(80px, 18vw, 220px);
+  font-size: clamp(80px, 18vw, 210px);
   font-weight: 700;
   white-space: nowrap;
   line-height: 1;
