@@ -74,14 +74,23 @@ html, body {
 /* RIGHT TEXT BLOCK */
 .fav-right {
   position: absolute;
-  left: clamp(420px, 46vw, 660px);    /* responsive column start */
-  top: clamp(160px, 26vh, 300px);
-  width: clamp(320px, 40vw, 630px);
-  font-family: "Poppins", system-ui, sans-serif;
-  font-size: clamp(16px, 1.6vw, 24px);
+
+  /* Position (Figma max: left 689, top 362) */
+  left: clamp(320px, 48vw, 689px);
+  top: clamp(170px, 26vh, 362px);
+
+  /* Box size (Figma max: 544×574) */
+  width: clamp(280px, 38vw, 544px);
+  height: clamp(300px, 45vh, 574px);
+
+  font-family: "Poppins", sans-serif;
   font-style: italic;
-  line-height: 1.5;
   color: #37446F;
+  text-align: left;
+  line-height: 1.45;
+
+  /* Text size (Figma max: 22px) */
+  font-size: clamp(14px, 1.6vw, 22px);
 }
 
 .fav-right p {
