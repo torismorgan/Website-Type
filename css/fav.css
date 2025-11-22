@@ -74,8 +74,8 @@ html, body {
 /* RIGHT TEXT BLOCK */
 .fav-right {
   position: absolute;
-  left: clamp(420px, 46vw, 660px);    /* responsive column start */
-  top: clamp(160px, 26vh, 300px);
+  left: clamp(420px, 46vw, 680px);    /* responsive column start */
+  top: clamp(160px, 26vh, 360px);
   width: clamp(320px, 40vw, 630px);
   font-family: "Poppins", system-ui, sans-serif;
   font-size: clamp(12px, 1.6vw, 22px);
