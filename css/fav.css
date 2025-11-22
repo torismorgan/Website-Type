@@ -78,7 +78,7 @@ html, body {
   top: clamp(160px, 26vh, 300px);
   width: clamp(320px, 40vw, 630px);
   font-family: "Poppins", system-ui, sans-serif;
-  font-size: clamp(16px, 1.6vw, 24px);
+  font-size: clamp(12px, 1.6vw, 22px);
   font-style: italic;
   line-height: 1.5;
   color: #37446F;
