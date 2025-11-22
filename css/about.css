@@ -49,7 +49,7 @@ html, body {
 /* Star beside title */
 .about-star {
   position: absolute;
-  left: clamp(20px, 6vw, 140px); 
+  left: clamp(20px, 6vw, 100px); 
   bottom: clamp(-20px, -3vh, -40px);
   font-family: "NauryzRedkeds", sans-serif;
   font-size: clamp(200px, 18vw, 340px);
