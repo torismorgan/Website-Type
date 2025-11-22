@@ -115,3 +115,18 @@ html, body {
   font-weight: 700;
   line-height: normal;
 }
+
+.scroll-hint {
+  margin: 10px 0 40px;
+  padding: 6px 18px;
+  border-radius: 999px;
+  background-color: rgba(0, 0, 0, 0.35); /* 35% opacity */
+  color: #F3F0E9;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  transition: background-color 0.25s ease;
+}
+
+.scroll-hint:hover {
+  background-color: rgba(0, 0, 0, 0.55); /* slightly stronger on hover */
+}
