@@ -46,7 +46,7 @@ html, body {
 .fav-letter {
   position: relative;
   top: clamp(120px, 18vh, 300px);
-  left: 217px;
+  left: 180px;
   font-family: "NauryzRedkeds", sans-serif;
   font-weight: 700;
   font-size: clamp(520px, 55vw, 900px);
