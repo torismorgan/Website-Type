@@ -170,7 +170,7 @@ html, body {
   padding: 80px 48px 48px;      /* top padding so header doesn’t cover content */
 }
 
-/* optional: little pill at bottom as a hint */
+/* optional: little pill at bottom as a hint 
 .scroll-hint {
   position: fixed;
   bottom: 204px;
@@ -185,7 +185,7 @@ html, body {
   opacity: 0.4;
 }
 
-
+*/
 
 @keyframes titleColorCycle {
   0%   { color: #F4C542; }
