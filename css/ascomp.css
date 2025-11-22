@@ -25,7 +25,7 @@ body {
   width: 661px;
   height: 627px;
   border-radius: 20px;
-  animation: boxColors 12s infinite linear;
+  animation: boxColors 8s infinite linear;
 }
 
 
@@ -42,7 +42,7 @@ body {
 
 .pose {
   opacity: 0;
-  animation-duration: 12s;
+  animation-duration: 8s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
