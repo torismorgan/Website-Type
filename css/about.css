@@ -112,7 +112,7 @@ html, body {
 .glyph-grid {
   display: grid;
   grid-template-columns: repeat(8, clamp(34px, 3vw, 44px));
-  gap: clamp(10px, 1.6vw, 18px);
+  gap: clamp(8px, 1.1vw, 12px);
   justify-content: end;
 }
 
