@@ -48,7 +48,7 @@ html, body {
   top: clamp(120px, 18vh, 300px);     /* responsive vertical nudge */
   font-family: "NauryzRedkeds", sans-serif;
   font-weight: 700;
-  font-size: clamp(520px, 60vw, 1200px); /* 🔥 key change */
+  font-size: clamp(520px, 55vw, 900px)
   line-height: 0.7;
   color: #37446F;
   transform-origin: center bottom;
@@ -91,12 +91,12 @@ html, body {
 /* STAR — scales with screen */
 .fav-star {
   position: absolute;
-  right: clamp(40px, 8vw, 180px);
+  right: clamp(60px, 10vw, 200px);
   top: clamp(-120px, -8vh, -40px);
   transform: rotate(109deg);
   font-family: "NauryzRedkeds", sans-serif;
   font-weight: 500;
-  font-size: clamp(260px, 36vw, 700px); /* 🔥 key change */
+  font-size: clamp(200px, 32vw, 500px); /* 🔥 key change */
   line-height: 0.7;
   color: #37446F;
   pointer-events: none;
