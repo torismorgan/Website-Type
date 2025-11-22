@@ -126,7 +126,7 @@ body {
 
 .page-title {
     position: absolute;
-    bottom: -200px;   /* pushes it downward so it overlaps/cuts out */
+    bottom: -150px;   /* pushes it downward so it overlaps/cuts out */
     left: 50%;
     transform: translateX(-50%); /* perfectly centers it */
     font-family: "NauryzRedkeds", sans-serif;
