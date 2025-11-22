@@ -92,7 +92,7 @@ html, body {
 /* STAR — scales with screen */
 .fav-star {
   position: absolute;
-  right: clamp(70px, 12vw, 220px);
+  right: clamp(70px, 12vw, 300px);
   top: clamp(-120px, -8vh, -40px);
   transform: rotate(109deg);
   font-family: "NauryzRedkeds", sans-serif;
