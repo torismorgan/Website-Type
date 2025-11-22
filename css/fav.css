@@ -45,7 +45,8 @@ html, body {
 /* BIG LETTER — scales with screen */
 .fav-letter {
   position: relative;
-  top: clamp(120px, 18vh, 300px);     /* responsive vertical nudge */
+  top: clamp(120px, 18vh, 300px);
+  left: 217px;
   font-family: "NauryzRedkeds", sans-serif;
   font-weight: 700;
   font-size: clamp(520px, 55vw, 900px);
@@ -62,8 +63,8 @@ html, body {
 /* “CLICK HERE” TAG */
 .fav-tag {
   position: absolute;
-  top: clamp(80px, 10vh, 140px);
-  left: 16px;
+  top: clamp(80px, 10vh, 120px);
+  left: 12px;
   padding: 6px 16px;
   font-family: "NauryzRedkeds", sans-serif;
   font-size: clamp(18px, 2.2vw, 32px);
