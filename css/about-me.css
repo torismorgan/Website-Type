@@ -118,7 +118,7 @@ html,body{
 /* right references */
 .project-refs {
   position: relative;
-  top: -40px;      /* ⬅️ was +60px */
+  top: -30px;      /* ⬅️ was +60px */
   text-align: right;
   font-style: italic;
   color: #6B754C;
@@ -134,19 +134,18 @@ html,body{
 
 /* list */
 .project-refs-list{
-  list-style:none;
+  list-style: none;
 }
 .project-refs-list li + li{ margin-top:4px; }
 
 .project-refs a{
   color:var(--olive);
-  text-decoration:underline;
+  text-decoration: underline;
   text-underline-offset:3px;
 }
 
 /* ----------------------------------------------------
    CLICK HERE pill (center-right, inside frame)
----------------------------------------------------- */
 .scroll-hint{
   position: absolute;
   right:clamp(24px, 4vw, 60px);
@@ -159,9 +158,12 @@ html,body{
   font-size:clamp(12px, 1vw, 14px);
   letter-spacing:0.1em;
   text-decoration: none;
-  opacity:0.9;            /* ✅ more opaque */
+  opacity:0.9;            
 }
-.scroll-hint:hover{ opacity:1; }
+.scroll-hint:hover{ 
+  opacity:1;
+---------------------------------------------------- */
+                  } 
 
 /* ----------------------------------------------------
    smaller screens
