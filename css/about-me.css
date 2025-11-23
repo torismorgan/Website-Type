@@ -1,141 +1,185 @@
-html, body {
-  height: 100%;
-  margin: 0;
-  background-color: #F3F0E9;
-  font-family: system-ui, sans-serif;
-
+:root{
+  --cream:#F3F0E9;
+  --yellow:#F4C542;
+  --olive:#6B754C;
+  --header-h:130px; /* matches other pages */
 }
 
-.project-main {
-  max-width: 1207px;
-  margin: 120px auto 80px;
-  padding: 0 48px;
+*{ box-sizing:border-box; margin:0; padding:0; }
+
+html,body{
+  height:100%;
+  background:var(--cream);
+  font-family:system-ui,sans-serif;
+  overflow:hidden; /* ✅ no page scroll */
 }
 
-
-
-.project-hero {
-  display: flex;
-  flex-direction: column;   /* stack name + star */
-  align-items: center;      /* PERFECT CENTER */
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 96px;
-  position: relative;
+/* ----------------------------------------------------
+   FRAME (one screen, same start as other pages)
+---------------------------------------------------- */
+.project-main{
+  position:relative;
+  width:min(1207px, 100%);
+  height:calc(100vh - var(--header-h));
+  margin:0 auto;
+  padding:clamp(12px, 2vw, 36px);
+  overflow:hidden;
 }
 
-.project-name {
-  flex: 1;                   /* NEW – lets it stretch and center */
-  text-align: center;
-  max-width: 100%;
- 
+/* ----------------------------------------------------
+   HERO (name + label + star)
+---------------------------------------------------- */
+.project-hero{
+  position:relative;
+  height:55%;                 /* top half of frame */
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
-.project-name-wrap {
-  display: flex;
-  align-items: flex-start;
-  gap: 40px;
+/* wrapper so label can sit beside */
+.project-name-wrap{
+  position:relative;
+  display:flex;
+  align-items:flex-start;
+  gap:clamp(16px, 2vw, 40px);
 }
 
 /* vertical “Project by” */
-.project-label {
-    position: relative;
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  color: #F3F0E9;            
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  transform: rotate(360deg); /* reads bottom → top like the Figma */
-  margin-top: 0px;
-
-  right:-290px;
-
+.project-label{
+  font-family:"Poppins", sans-serif;
+  font-weight:700;
+  font-size:clamp(12px, 1.2vw, 18px);
+  color:var(--cream);
+  writing-mode:vertical-rl;
+  text-orientation:mixed;
+  transform:rotate(180deg);
+  margin-top:clamp(6px, 1vh, 12px);
 }
 
-
-.project-line {
-  display: block;
-  font-family: "NauryzRedkeds", sans-serif;
-  font-size: clamp(120px, 18vw, 200px);
-  line-height: 0.9;
-  color: #F4C542;
-  text-align: center
+/* big two-line name */
+.project-name{
+  text-align:center;
 }
 
-.project-star {
+.project-line{
+  display:block;
+  font-family:"NauryzRedkeds", sans-serif;
+  font-size:clamp(88px, 14vw, 180px);
+  line-height:0.9;
+  color:var(--yellow);
+}
+
+/* star in top-right of hero */
+.project-star{
   position:absolute;
-  right: -250px;
-  bottom: 265px;
-  font-family: "NauryzRedkeds", sans-serif;
-  font-size: 340px;
-  color: #6B754C;
+  right:clamp(-60px, -6vw, -20px);  /* slightly out */
+  top:clamp(0px, 2vh, 30px);
+  font-family:"NauryzRedkeds", sans-serif;
+  font-size:clamp(160px, 18vw, 320px);
+  color:var(--olive);
+  line-height:0.8;
+  pointer-events:none;
 }
 
-.project-body {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 80px;    
-  margin: 10px;
-  max-width: 100%;
+/* ----------------------------------------------------
+   BODY (copy left + refs right)
+---------------------------------------------------- */
+.project-body{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  height:45%;                    /* bottom half */
+  display:grid;
+  grid-template-columns: 1fr auto;
+  gap:clamp(24px, 4vw, 80px);
+  align-items:start;
+  padding:0 clamp(12px, 2vw, 36px);
 }
 
-.project-copy {
-    position: relative;
-    right:150px;
-    top: -60px;
-  max-width: 830px;
-  font-family: "Poppins", sans-serif;
-  line-height: 1.6;
-  font-size: 20px;
-  color: #6B754C;
-  letter-spacing: 0.011em;
-  
+/* left text */
+.project-copy{
+  max-width:clamp(420px, 55vw, 780px);
+  font-family:"Poppins", sans-serif;
+  line-height:1.55;
+  font-size:clamp(12px, 1.2vw, 18px);
+  color:var(--olive);
 }
 
-
-.project-heading {
-    position: relative;
-  font-size: 32px;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  color: #6B754C;
-  margin-bottom: px;
+/* heading */
+.project-heading{
+  font-weight:700;
+  letter-spacing:0.12em;
+  font-size:clamp(16px, 1.6vw, 28px);
+  margin-bottom:clamp(8px, 1vh, 14px);
 }
 
-/* right references column */
-.project-refs {
-    position: relative;
-  font-family: "Poppins", sans-serif;
-  top: 60px;
-  line-height: 1.5;
-  text-align: right;
-  color: #6B754C;
-  font-style: italic;
-  flex: 0 0 320px;
-  width: 320px;
+/* right references */
+.project-refs{
+  width:clamp(180px, 20vw, 320px);
+  font-family:"Poppins", sans-serif;
+  font-style:italic;
+  text-align:right;
+  color:var(--olive);
+  font-size:clamp(11px, 1.1vw, 16px);
+  align-self:end;                /* sit lower like figma */
 }
 
-.project-refs-heading {
-  font-weight: 500;
-  margin-bottom: 12px;
-    font-size: 20px;
+/* refs title */
+.project-refs-heading{
+  font-weight:500;
+  margin-bottom:8px;
+  font-size:clamp(12px, 1.2vw, 18px);
 }
 
-.project-refs-list {
-      font-size: 18px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+/* list */
+.project-refs-list{
+  list-style:none;
+}
+.project-refs-list li + li{ margin-top:4px; }
+
+.project-refs a{
+  color:var(--olive);
+  text-decoration:underline;
+  text-underline-offset:3px;
 }
 
-.project-refs-list li + li {
-  margin-top: 4px;
+/* ----------------------------------------------------
+   CLICK HERE pill (center-right, inside frame)
+---------------------------------------------------- */
+.scroll-hint{
+  position:absolute;
+  right:clamp(24px, 4vw, 60px);
+  top:50%;
+  transform:translateY(-50%);
+  padding:6px 18px;
+  border-radius:999px;
+  background:#252525;
+  color:var(--cream);
+  font-size:clamp(12px, 1vw, 14px);
+  letter-spacing:0.1em;
+  text-decoration:none;
+  opacity:0.9;            /* ✅ more opaque */
 }
+.scroll-hint:hover{ opacity:1; }
 
-.project-refs a {
-  color: #6B754C;
-  text-decoration: underline;
-  text-underline-offset: 3px;
+/* ----------------------------------------------------
+   smaller screens
+---------------------------------------------------- */
+@media (max-width: 900px){
+  .project-hero{ height:50%; }
+  .project-body{
+    height:50%;
+    grid-template-columns:1fr;
+  }
+  .project-refs{
+    text-align:left;
+    width:100%;
+    margin-top:12px;
+  }
+  .scroll-hint{
+    right:50%;
+    transform:translate(50%, -50%);
+  }
 }
