@@ -118,7 +118,7 @@ html,body{
 /* right references */
 .project-refs {
   position: relative;
-  top: -30px;      /* ⬅️ was +60px */
+  top: -15px;      /* ⬅️ was +60px */
   text-align: right;
   font-style: italic;
   color: #6B754C;
