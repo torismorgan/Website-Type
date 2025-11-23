@@ -101,10 +101,10 @@ html,body{
 /* left text */
 .project-copy{
   max-width:clamp(420px, 55vw, 780px);
-  font-family:"Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height:1.55;
   font-size:clamp(12px, 1.2vw, 18px);
-  color:var(--olive);
+  color: #6B754C;
 }
 
 /* heading */
@@ -116,14 +116,13 @@ html,body{
 }
 
 /* right references */
-.project-refs{
-  width:clamp(180px, 20vw, 320px);
-  font-family:"Poppins", sans-serif;
-  font-style:italic;
-  text-align:right;
-  color:var(--olive);
-  font-size:clamp(11px, 1.1vw, 16px);
-  align-self:end;                /* sit lower like figma */
+.project-refs {
+  position: relative;
+  top: -20px;      /* ⬅️ was +60px */
+  text-align: right;
+  font-style: italic;
+  color: #6B754C;
+  width: 320px;
 }
 
 /* refs title */
@@ -149,7 +148,7 @@ html,body{
    CLICK HERE pill (center-right, inside frame)
 ---------------------------------------------------- */
 .scroll-hint{
-  position:absolute;
+  position: absolute;
   right:clamp(24px, 4vw, 60px);
   top:50%;
   transform:translateY(-50%);
@@ -159,7 +158,7 @@ html,body{
   color:var(--cream);
   font-size:clamp(12px, 1vw, 14px);
   letter-spacing:0.1em;
-  text-decoration:none;
+  text-decoration: none;
   opacity:0.9;            /* ✅ more opaque */
 }
 .scroll-hint:hover{ opacity:1; }
@@ -174,7 +173,7 @@ html,body{
     grid-template-columns:1fr;
   }
   .project-refs{
-    text-align:left;
+    text-align: left;
     width:100%;
     margin-top:12px;
   }
