@@ -72,14 +72,14 @@ html,body{
 
 /* star in top-right of hero */
 .project-star{
-  position:absolute;
-  right:clamp(-60px, -6vw, -20px);  /* slightly out */
+  position: absolute;
   top:clamp(0px, 2vh, 30px);
-  font-family:"NauryzRedkeds", sans-serif;
+  right: clamp(20px, 4vw, 80px); 
+  font-family: "NauryzRedkeds", sans-serif;
   font-size:clamp(160px, 18vw, 320px);
   color:var(--olive);
   line-height:0.8;
-  pointer-events:none;
+  pointer-events: none;
 }
 
 /* ----------------------------------------------------
