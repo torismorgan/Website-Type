@@ -137,18 +137,24 @@ top: 55px;
   transform: rotate(-45deg);
 }
 
+
 .scroll-hint {
-  margin: 10px 0 40px;
-  padding: 6px 18px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 8px 22px;
   border-radius: 999px;
-  background-color: rgba(0, 0, 0, 0.35); /* 35% opacity */
+  background: rgba(0, 0, 0, 0.45);
   color: #F3F0E9;
   font-size: 14px;
   letter-spacing: 0.1em;
-  transition: background-color 0.25s ease;
+  text-decoration: none;
+  z-index: 10; /* stay above letters */
 }
-
 .scroll-hint:hover {
   background-color: rgba(0, 0, 0, 0.55); /* slightly stronger on hover */
 }
+
 
