@@ -50,7 +50,7 @@ html, body {
 /* Star beside title */
 .about-star {
   position: absolute;
-  left: clamp(15px, 5vw, 60px); 
+  left: clamp(8px, 2vw, 20px); 
   bottom: clamp(-20px, -3vh, -40px);
   font-family: "NauryzRedkeds", sans-serif;
   font-size: clamp(200px, 18vw, 340px);
