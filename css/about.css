@@ -16,6 +16,7 @@ html, body {
 ---------------------------------------------------- */
 .about-main {
   width: min(1207px, 100%);
+  height: calc(100vh - 130px);
   margin: 70px auto 80px;  /* ✅ same top start as other pages */
   padding: 0 24px;         /* small responsive gutter */
   position: relative;
