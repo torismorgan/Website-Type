@@ -8,7 +8,7 @@ html, body {
   min-height: 100vh;
   background-color: #F3F0E9;
   font-family: system-ui, sans-serif;
-  overflow-x: hidden; /* allow big type without side scroll */
+  overflow-x: hidden; 
 }
 
 /* ----------------------------------------------------
@@ -19,6 +19,7 @@ html, body {
   margin: 70px auto 80px;  /* ✅ same top start as other pages */
   padding: 0 24px;         /* small responsive gutter */
   position: relative;
+   overflow: hidden;
 }
 
 /* ----------------------------------------------------
