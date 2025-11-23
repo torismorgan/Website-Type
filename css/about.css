@@ -17,7 +17,7 @@ html, body {
 .about-main {
   width: min(1207px, 100%);
   height: calc(100vh - 130px);
-  margin: 70px auto 80px;  /* ✅ same top start as other pages */
+  margin: 70px auto 0px;  
   padding: 0 24px;         /* small responsive gutter */
   position: relative;
    overflow: hidden;
@@ -31,7 +31,7 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: clamp(80px, 10vh, 146px);
+  margin-bottom: clamp(40px, 6vh, 80px)
   padding-top: clamp(10px, 3vh, 30px); /* gentle consistent drop */
 }
 
