@@ -131,8 +131,7 @@ html, body {
   letter-spacing: 0.1em;
   text-decoration: none;
   z-index: 10; /* stay above letters */
-}}
-
+}
 .scroll-hint:hover {
   background-color: rgba(0, 0, 0, 0.55); /* slightly stronger on hover */
 }
