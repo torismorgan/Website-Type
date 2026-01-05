@@ -13,7 +13,7 @@ html, body {
 
 @font-face {
     font-family: "NauryzRedkeds";
-    src: url("../fonts/NAURYZREDKEDS.ttf") format("truetype");
+    src: url("../font/NAURYZREDKEDS.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
